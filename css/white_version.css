@@ -1,0 +1,12 @@
+p{
+	color: black !important;
+}
+
+ul li{
+	color: black;
+}
+
+.tooltip-inner{
+		color: white;
+		background-color: rgba(0,0,0,0.9);
+	}

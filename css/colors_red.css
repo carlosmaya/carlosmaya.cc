@@ -1,0 +1,23 @@
+body{
+	background-color: #ff493d;
+}
+
+.upper_bg{
+	color: white;
+
+	background-color: #38343e;
+}
+
+.slogan span{
+	background-color: #ff493d !important;
+}
+
+.subscribe #button{
+	border-left: 16px solid #ff493d !important;
+}
+	
+footer{
+	color: black;
+
+	background-color: #ff493d;
+}

@@ -1,0 +1,27 @@
+body{
+	/* background-color: #00ffed; */ 
+}
+
+.upper_bg{
+	color: white;
+
+	background-color: #38343e;
+}
+
+.slogan span{
+	background-color: #00ffed;
+}
+
+.subscribe #button{
+	border-left: 16px solid #00ffed !important;
+}
+
+footer{
+	color: #38343e;
+
+	background-color: #00ffed;
+}
+
+.description a:link {
+	background-color: #00ffed;
+}
