@@ -1,160 +1,111 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
     <title>carlos maya</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Le styles -->
-    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-
-    <link style-type="colors" href="css/colors_default.css" rel="stylesheet">
-    <link style-type="fonts" href="css/fonts_default.css" rel="stylesheet">
-
-    <link href="css/style.css" rel="stylesheet">
-
-    <link href="setup_panel/setup_panel.css" rel="stylesheet">
-    <link href="css/white_version.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Indie+Flower|Varela">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
-
-  <body>
-
-
-
-  <div class="upper_bg static_bg_white">
-
-    <div class="container">
-
-      <header>
-        <div class="row">
-          <div class="span6">
-            <div class="logo">
-              <p>
-                carlos<span>MAYA</span>      
-              </p>
-            </div>
-          </div>
-          <div class="span6">
-                <!-- 
-                ########################
-                Social icons
-                ************************
-                 -->
-            <div class="socials">
-              <a rel="tooltip" data-placement="bottom" data-original-title="Twitter" href="http://twitter.com/carlitosbraun" target="_blank"><img src="img/socials/twitter_blck.png" alt="twitter"></a>
-              <a rel="tooltip" data-placement="bottom" data-original-title="Github" href="https://github.com/carlosmaya" target="_blank"><img src="img/socials/github.png" alt="github" height="26" width="26"></a>
-
-              <a rel="tooltip" data-placement="bottom" data-original-title="Skype" href="skype:cubpiranha"><img src="img/socials/skype_blck.png" alt="Skype"></a>
-            </div>
-          </div>
-        </div>  
-      </header>
-
-      <!-- 
-      ########################
-      Company slogan lays in section below
-      ************************
-       -->
-      <div class="row">
-        <div class="span8">
-          <p class="slogan">
-			<span>
-				// programmer .<br/>
-				// #workinprogress entrepreneur .<br/>
-				// innovator enthusiastic .
-			</span>
-		  </p>
-        </div>
+  <body onload="startTyping();">
+    <section class="container">
+      <h1>Hola!  soy Carlos Maya.</h1>
+      <p>papá de dos  /  tiro código  /  bebo cerveza /  colecciono tenis</p>
+      <div class="know-more" >
+        <input id="btn" class="input" type="text" placeholder="" onfocus="stopTyping();" onblur="startTyping();" onchange="details(this.value);">
       </div>
-
-      <!-- 
-      ########################
-      Description
-      ************************
-       -->
-
-      <div class="row">
-        <div class="span5">
-          <p class="description">
-            I'm passionate about technology, but most important, how it can help people for good. I started programming when I was 15 and since then I love programming languages, right now I'm trying to mastering <a href="http://golang.org">Go</a>, love it so far!!
-          </p>
-          <p class="description">
-			I failed two times trying to create a couple of startups with some friends. First idea was to make mobile payments through SMS and later came Transfer and make it real. Second idea is <a href="http://eventlr.com">eventlr.com</a> and it is frozen now. I'm still collaborating with people and working to make "the next cool idea" happen.
-          </p>
-          <p class="description">
-			I'm curious about life in general. Love music. Big fan of sports. And a permanent learner. 
-          </p>
-        </div>
-
-      </div> <!-- end row -->
-
-
-
-    </div> <!-- /container -->
-  </div>
-
-  <footer>
-    
-    <div class="container">
-      <div class="row">
-        <div class="span6">
-			<h4>feel free to contact me at <a href="mailto:beto@carlosmaya.mx">beto@carlosmaya.mx</a></h4>
-        </div>
+      <div id="details-a" class="content">
+        &gt; Soy parte del grupo de hackers que colabora por un <a href="https://github.com/mxabierto/hackea-el-sistema">México abierto</a>
       </div>
-    </div>  
-        
-  </footer>   
+      <div id="details-b" class="content">
+        &gt; WIP ( prometo tenerlo pronto )
+      </div>
+      <div id="details-c" class="content">
+        <ul>
+          <li>&gt; email&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp; <a href="mailto:carlos.maya.ramirez@gmail.com">carlos.maya.ramirez@gmail.com</a></li>
+          <li>&gt; twitter&nbsp;&nbsp;=&nbsp;&nbsp; <a href="http://twitter.com/carlitosbraun">@carlitosbraun</a></li>
+          <li>&gt; github&nbsp;&nbsp;=&nbsp;&nbsp; <a href="http://github.com/carlosmaya">carlosmaya</a></li>
+        </ul>
+      </div>
+    </section>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-
-    <script type="text/javascript" charset="utf-8">
-      // sliderHeight = $('.upper_bg').height();
-      // console.log(sliderHeight);
-      // $('.slider_container').css({
-      //   height: sliderHeight
-      // })
-      $("a[rel='tooltip']").tooltip();
-
-    </script>
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-38547230-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-38547230-1', 'auto');
+      ga('send', 'pageview');
 </script>
 
+
+<script>
+  var help = ["¿ Quieres conocer más ?",
+              "Escribe 'a' para saber en que ando",
+              "'b' para el blog",
+              "'c' para saber donde contactarme"];
+  var typing = false;
+  var helpIndx = 0;
+
+  function type() {
+    if (!typing) return;
+
+    text = help[helpIndx];
+    placeholder = document.getElementById('btn').placeholder;
+
+    if (text.length > placeholder.length) {
+      placeholder += text.charAt(placeholder.length);
+      document.getElementById('btn').placeholder = placeholder;
+      setTimeout(type,100);
+    } else {
+        setTimeout(clean,1000);
+    }
+  }
+
+  function clean() {
+    if (!typing) return;
+
+    placeholder = document.getElementById('btn').placeholder;
+
+    if (placeholder.length > 0) {
+      placeholder = placeholder.substring(0,placeholder.length-2);
+      document.getElementById('btn').placeholder = placeholder;
+      setTimeout(clean,50);
+    } else {
+      helpIndx = ( helpIndx < (help.length-1) )?helpIndx+1:0;
+      setTimeout(type,500);
+    }
+  }
+
+  function stopTyping() {
+    typing = false;
+    helpIndx = 0;
+    document.getElementById('btn').placeholder = "";
+  }
+
+  function startTyping() {
+    typing = true;
+    helpIndx = 0;
+    type();
+  }
+
+  function details(cmd) {
+    document.getElementById('details-a').style.display = "none";
+    document.getElementById('details-b').style.display = "none";
+    document.getElementById('details-c').style.display = "none";
+
+    if (cmd.toLowerCase()=="a") {
+      document.getElementById('details-a').style.display = "block";
+    } else if (cmd.toLowerCase()=="b") {
+      document.getElementById('details-b').style.display = "block";
+    } else if (cmd.toLowerCase()=="c") {
+      document.getElementById('details-c').style.display = "block";
+    } else {
+
+    }
+  }
+
+</script>
 
   </body>
 </html>
