@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>carlos maya</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Indie+Flower|Varela">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body onload="startTyping();">
+    <section class="container">
+      <h1>Hola!  soy Carlos Maya.</h1>
+      <p>papá de dos  /  tiro código  /  bebo cerveza /  colecciono tenis</p>
+      <div class="know-more" >
+        <input id="btn" class="input" type="text" placeholder="" onfocus="stopTyping();" onblur="startTyping();" onchange="details(this.value);">
+      </div>
+      <div id="details-a" class="content">
+        &gt; Soy parte del grupo de hackers que colabora por un <a href="https://github.com/mxabierto/hackea-el-sistema">México abierto</a>
+      </div>
+      <div id="details-b" class="content">
+        &gt; WIP ( prometo tenerlo pronto )
+      </div>
+      <div id="details-c" class="content">
+        <ul>
+          <li>&gt; email&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp; <a href="mailto:carlos.maya.ramirez@gmail.com">carlos.maya.ramirez@gmail.com</a></li>
+          <li>&gt; twitter&nbsp;&nbsp;=&nbsp;&nbsp; <a href="http://twitter.com/carlitosbraun">@carlitosbraun</a></li>
+          <li>&gt; github&nbsp;&nbsp;=&nbsp;&nbsp; <a href="http://github.com/carlosmaya">carlosmaya</a></li>
+        </ul>
+      </div>
+    </section>
+
+<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-38547230-1', 'auto');
+      ga('send', 'pageview');
+</script>
+
+
+<script>
+  var help = ["¿ Quieres conocer más ?",
+              "Escribe 'a' para saber en que ando",
+              "'b' para el blog",
+              "'c' para saber donde contactarme"];
+  var typing = false;
+  var helpIndx = 0;
+
+  function type() {
+    if (!typing) return;
+
+    text = help[helpIndx];
+    placeholder = document.getElementById('btn').placeholder;
+
+    if (text.length > placeholder.length) {
+      placeholder += text.charAt(placeholder.length);
+      document.getElementById('btn').placeholder = placeholder;
+      setTimeout(type,100);
+    } else {
+        setTimeout(clean,1000);
+    }
+  }
+
+  function clean() {
+    if (!typing) return;
+
+    placeholder = document.getElementById('btn').placeholder;
+
+    if (placeholder.length > 0) {
+      placeholder = placeholder.substring(0,placeholder.length-2);
+      document.getElementById('btn').placeholder = placeholder;
+      setTimeout(clean,50);
+    } else {
+      helpIndx = ( helpIndx < (help.length-1) )?helpIndx+1:0;
+      setTimeout(type,500);
+    }
+  }
+
+  function stopTyping() {
+    typing = false;
+    helpIndx = 0;
+    document.getElementById('btn').placeholder = "";
+  }
+
+  function startTyping() {
+    typing = true;
+    helpIndx = 0;
+    type();
+  }
+
+  function details(cmd) {
+    document.getElementById('details-a').style.display = "none";
+    document.getElementById('details-b').style.display = "none";
+    document.getElementById('details-c').style.display = "none";
+
+    if (cmd.toLowerCase()=="a") {
+      document.getElementById('details-a').style.display = "block";
+    } else if (cmd.toLowerCase()=="b") {
+      document.getElementById('details-b').style.display = "block";
+    } else if (cmd.toLowerCase()=="c") {
+      document.getElementById('details-c').style.display = "block";
+    } else {
+
+    }
+  }
+
+</script>
+
+  </body>
+</html>
